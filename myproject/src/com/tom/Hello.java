@@ -3,13 +3,18 @@ package com.tom;
 public class Hello {
 
 	public static void main(String[] args) {
-		//
-//		System.out.println("Hank 70 90 80");
-		String name = "Hank";
-		int english = 70;
-		int math = 90;
-		System.out.println(name + "\t" + english + "\t" + math + "\t" + (english+math)/2);
+		Student stu = new Student("Hank", 70, 90);
+		stu.print();
+		System.out.println(3 <= 5);
+		String s = new String("abc");
+		System.out.println(s);
+		String s2 = "abc";
+		System.out.println(s == s2);
 		
+		Student jack = new Student();
+		/*stu.name = "Hank";
+		stu.english = 70;
+		stu.math = 90;*/
 		
 		Person p = new Person(65.5f, 1.7f);
 		System.out.println(p.bmi());
