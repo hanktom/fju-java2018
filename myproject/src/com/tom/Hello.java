@@ -1,10 +1,28 @@
 package com.tom;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Hello {
 
 	public static void main(String[] args) {
+		int a = 1;
+		while(a > 0){
+			System.out.println("AAAA");
+			a = a - 1;
+		}
+		
+		Random random = new Random();
+		int secret = random.nextInt(100)+1;
+		System.out.println(secret);
+		
+		float n = 10.6646677f;
+		String nick = "Tom";
+		System.out.printf("Hi, %s, Your age: %.2f\n",  nick, n );
+		
+		double c = 24;
+		System.out.println(c*(9/5)+32);
+		
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Your name:");
 		String name = scanner.nextLine();
